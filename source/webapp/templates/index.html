@@ -7,7 +7,7 @@
 
     {% for article in articles %}
          <span>{{ article.author }}   |</span><span>{{ article.email }}</span>
-        <button type="button">update</button>
+        <a href="{% url "update" article.pk %}"><button type="button">update</button> </a>
         <button type="button">delete</button>
         <p>{{ article.text }}</p>
 

@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from webapp.views import review_create, index_view
+from webapp.views import review_create, index_view, review_update_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index_view,name='index'),
     path('add/', review_create, name='review_create'),
+    path('<int:pk>/edit/', review_update_view, name='update')
 ]
