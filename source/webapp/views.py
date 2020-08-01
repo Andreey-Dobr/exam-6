@@ -14,10 +14,12 @@ def index_view(request):
             form = ReviewForm()
         return render(request, 'index.html', context={
             'articles': data,
-            'form': form
+            'form': form,
         })
     elif request.method == 'POST':
         return review_create(request)
+    else:
+        return HttpResponseNotAllowed(permitted_methods=['GET', 'POST'])
 
 
 
