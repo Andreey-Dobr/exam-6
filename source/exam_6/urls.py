@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from webapp import views as webapp_views
+
+from webapp.views import review_create, index_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', webapp_views.index_view)
+    path('',index_view,name='index'),
+    path('add/', review_create, name='review_create'),
 ]
