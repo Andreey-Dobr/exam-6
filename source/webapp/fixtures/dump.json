@@ -1,0 +1,92 @@
+[
+{
+  "model": "webapp.article",
+  "pk": 1,
+  "fields": {
+    "author": "Unknown",
+    "email": "123@mail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum amet doloremque earum iusto ipsum quo ratione ducimus vero neque, provident eveniet maiores optio, quaerat debitis obcaecati aut voluptas tenetur.",
+    "date_created": "2020-08-01T05:50:35.737Z",
+    "date_update": "2020-08-01T05:50:35.737Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 2,
+  "fields": {
+    "author": "who",
+    "email": "143@mail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum amet doloremque earum iusto ipsum quo ratione ducimus vero neque, provident eveniet maiores optio, quaerat debitis obcaecati aut voluptas tenetur.",
+    "date_created": "2020-08-01T05:51:09.362Z",
+    "date_update": "2020-08-01T05:51:09.362Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 3,
+  "fields": {
+    "author": "Un",
+    "email": "ass@mail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum amet doloremque earum iusto ipsum quo ratione ducimus vero neque, provident eveniet maiores optio, quaerat debitis obcaecati aut voluptas tenetur.",
+    "date_created": "2020-08-01T05:52:23.083Z",
+    "date_update": "2020-08-01T05:52:23.083Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 4,
+  "fields": {
+    "author": "none",
+    "email": "xcom@mail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum amet doloremque earum iusto ipsum quo ratione ducimus vero neque, provident eveniet maiores optio, quaerat debitis obcaecati aut voluptas tenetur.",
+    "date_created": "2020-08-01T05:52:47.162Z",
+    "date_update": "2020-08-01T05:52:47.162Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 5,
+  "fields": {
+    "author": "Van",
+    "email": "van@mail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum amet doloremque earum iusto ipsum quo ratione ducimus vero neque, provident eveniet maiores optio, quaerat debitis obcaecati aut voluptas tenetur.",
+    "date_created": "2020-08-01T05:53:24.613Z",
+    "date_update": "2020-08-01T05:53:24.613Z",
+    "status": "active"
+  }
+},
+{
+  "model": "webapp.article",
+  "pk": 6,
+  "fields": {
+    "author": "Lo",
+    "email": "lo@mail.com",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum amet doloremque earum iusto ipsum quo ratione ducimus vero neque, provident eveniet maiores optio, quaerat debitis obcaecati aut voluptas tenetur.",
+    "date_created": "2020-08-01T05:53:48.895Z",
+    "date_update": "2020-08-01T05:53:48.895Z",
+    "status": "blocked"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$USOC6aJlNGUX$1V1oWiiiBpbOEvuAt6jBTEN7db8jg33f2+hTWPClrTQ=",
+    "last_login": "2020-08-01T05:48:10.525Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@mail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-01T05:47:21.553Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
