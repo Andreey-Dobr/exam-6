@@ -8,7 +8,8 @@
     {% for article in articles %}
          <span>{{ article.author }}   |</span><span>{{ article.email }}</span>
         <a href="{% url "update" article.pk %}"><button type="button">update</button> </a>
-        <button type="button">delete</button>
+        <a href="{% url "del" article.pk %}"><button type="button">delete</button> </a>
+
         <p>{{ article.text }}</p>
 
 
