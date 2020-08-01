@@ -10,7 +10,8 @@
     <form action="{% url "del" article.pk %}" method="post">
         {% csrf_token %}
         <p><input type="submit" value="Да"></p>
-        <p><a href="{% url 'index'  %}">Отмена</a></p>
+
+        <button type="button"><a href="{% url 'index'  %}" style="text-decoration: none">Нет</a></button>
     </form>
     <h3>Содержимое отзыва: </h3>
     <p>{{ article.text }}</p>
