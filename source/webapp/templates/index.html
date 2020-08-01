@@ -11,15 +11,16 @@
     <div class="div" style="width: 100%;border: 5px solid rgba(0,0,0,1); margin-top: 5px; padding: 2%;
 border-radius: .8rem; background: #f8f9fa">
          {{ article.author }}   ({{ article.email }})
-
-
         <a href="{% url "update" article.pk %}" style="margin-left: 5px"><img src="https://img.icons8.com/material-rounded/24/000000/renew-subscription.png"/></a>
         <a href="{% url "del" article.pk %}" style="margin-left: 5px"><img src="https://img.icons8.com/windows/24/000000/--cancel-delete.png"/></a>
-
         <p>{{ article.text }}</p>
-
     </div>
-
     {% endfor %}
 
+    <h1>Добавить новую запись</h1>
+    {% url "create" as action_url %}
+    {% include 'partial/form.html' with action_url=action_url form_method='post' button_text='create' %}
+
+
 {% endblock %}
+

@@ -8,7 +8,7 @@
    <p class="form-error">{{ error }}</p>
 {% endfor %}
 {% for field in form %}
-   <label for="{{ field.id_for_label }}" style="font-size: 20px;">{{ field.label }}</label>
+   <label for="{{ field.id_for_label }}" style="font-size: 20px;">{{ field.label }} :</label>
 
    {% for error in field.errors %}
        <p class="form-error">{{ error }}</p>

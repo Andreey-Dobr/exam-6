@@ -6,13 +6,18 @@ from webapp.models import Article
 
 def index_view(request):
     is_admin = request.GET.get('is_admin', None)
-    if is_admin:
-        data = Article.objects.all()
-    else:
-        data = Article.objects.filter(status='active')
-    return render(request, 'index.html', context={
-        'articles': data
-    })
+    if request.method == 'GET':
+        if is_admin:
+            data = Article.objects.all()
+        else:
+            data = Article.objects.filter(status='active')
+            form = ReviewForm()
+        return render(request, 'index.html', context={
+            'articles': data,
+            'form': form
+        })
+    elif request.method == 'POST':
+        return review_create(request)
 
 
 
