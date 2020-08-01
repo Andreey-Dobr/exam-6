@@ -8,11 +8,15 @@
    <p class="form-error">{{ error }}</p>
 {% endfor %}
 {% for field in form %}
-   <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+   <label for="{{ field.id_for_label }}" style="font-size: 20px;">{{ field.label }}</label>
+
    {% for error in field.errors %}
        <p class="form-error">{{ error }}</p>
    {% endfor %}
-   <p>{{ field }}</p>
+    {{ field }}
+    <br>
+    <br>
+    <br>
 {% endfor %}
 <input type="submit" value="{{ button_text|default:"Submit" }}"/>
 </form>

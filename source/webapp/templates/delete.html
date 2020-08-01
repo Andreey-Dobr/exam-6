@@ -2,7 +2,7 @@
 
 {% block title %}Delete{% endblock %}
 
-
+{% block menu %}<li style=""><a href="{% url 'index' %}">Title</a></li>{% endblock %}
 
 {% block content %}
     <h1>Вы уверены, что хотите отзыв "{{ article.author }}"?</h1>
